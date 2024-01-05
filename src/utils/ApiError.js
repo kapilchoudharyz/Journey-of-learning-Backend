@@ -19,5 +19,6 @@ class ApiError extends Error {
     }
   }
 }
-
-export { ApiError}
+let error = new ApiError(355, "this is message", ["unknown"], "something");
+console.log(error);
+export { ApiError };
